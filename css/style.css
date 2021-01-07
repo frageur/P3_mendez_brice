@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+
+/* ///////////////// BASIC STYLES \\\\\\\\\\\\\\\\\\\\\\\ */
+html
+{
+    font-family: 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, 0.897);
+    font-size: 1em;
+}
+*
+{
+    box-sizing: border-box;
+}
+h2
+{
+    font-size: 1.3em;
+}
+h3
+{
+    font-size: 0.9em;
+}
+h2, h3
+{
+    font-weight: bold;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+img
+{
+    height: 17px;
+    width: 17px;
+}
+
+
+/* ///////////////// HEADER \\\\\\\\\\\\\\\\\\\\\\\ */
+
+.logo-ohmyfood img
+{
+    height: 30px;
+    width: 160px;
+}
+.logo-ohmyfood
+{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.position
+{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.205);
+    padding: 15px;
+    align-items: baseline;
+    box-shadow:inset 0 1.5px 3px rgba(128, 128, 128, 0.500);
+    font-weight: bold;
+}
+.position p
+{
+    color: rgb(90, 88, 88);
+}
+.position img
+{
+    margin-right: 15px;
+}
+.lien-restaurants
+{
+    background-color: rgba(128, 128, 128, 0.103);
+    padding: 30px;
+    text-align: center;
+}
+.lien-restaurants p
+{
+    margin-top: 20px;
+    color: rgb(107, 104, 104);
+    line-height: 130%;
+}
+h1
+{
+    font-weight: 800;
+    font-size: 1.5em;
+}
+.lien-restaurants a
+{
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-radius: 9999px;
+    background: linear-gradient(355deg, rgba(130,28,210,1) 0%, rgba(236,101,223,1) 100%);
+    padding: 15px 30px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 5px 7px rgba(212, 210, 210, 0.61);
+}
+
+
+/* ///////////////// SECTION FONCTIONNEMENT \\\\\\\\\\\\\\\\\\\\\\\ */
+
+#fonctionnement
+{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+#fonctionnement h2
+{
+    margin-left: 15px;
+    font-weight: bold;
+}
+.container-fonctionnement:hover > i
+{
+    color:  rgb(183, 111, 238);
+}
+.container-fonctionnement:hover
+{
+    background-color:  rgb(231, 223, 236);
+    cursor: pointer;
+}
+.container-fonctionnement
+{
+    display: flex;
+    margin: 20px 50px;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.103);
+    transition: all 200ms ease-in-out;
+    padding: 25px;
+    position: relative;
+    box-shadow: 0 5px 7px rgba(212, 210, 210, 0.61);
+}
+.container-fonctionnement span
+{
+    margin-right: 30px;
+    position: absolute;
+    left: -9px;
+    top: 22px;
+    border-radius: 9999px;
+    background-color: rgb(183, 111, 238);
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+}
+.container-fonctionnement p
+{
+    font-weight: bold;
+}
+.container-fonctionnement i
+{
+    color: rgb(107, 104, 104);
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: all 200ms ease-in-out;
+}
+
+/* ///////////////// SECTION RESTAURANTS \\\\\\\\\\\\\\\\\\\\\\\ */
+#restaurant
+{
+    background-color: rgba(128, 128, 128, 0.103);
+    padding: 40px 20px 50px 20px;
+}
+#restaurant h2
+{
+    padding-left: 8px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.box-restaurant
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+    box-shadow: 0 5px 7px rgba(212, 210, 210, 0.61);
+    border-radius: 15px;
+}
+.restaurant-information
+{
+    align-items: center;
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 0 0 15px 15px;
+}
+.information-content
+{
+    display: flex;
+    flex-direction: column;
+}
+.information-content h3
+{
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+.restaurant-information i
+{
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.information-content p
+{
+    color: rgb(59, 57, 57);
+}
+.restaurant-information .fa-heart
+{
+    color: #FFF;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: grey;
+    font-size: 24px;
+    padding: 5px;
+    transition: all 200ms ease-in-out;
+}
+
+.restaurant-information .fa-heart:hover
+{
+    background: linear-gradient(0deg, rgba(217,32,218,0.8) 0%, rgba(180,32,181,0.8) 50%, rgba(123,34,195,0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: transparent;
+}
+.restaurant-information .fa-heart.liked
+{
+    background: linear-gradient(0deg, rgba(217,32,218,0.8) 0%, rgba(180,32,181,0.8) 50%, rgba(123,34,195,0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: transparent;
+}
+.nouveau
+{
+    border-radius: 3px;
+    color: rgb(41, 151, 124);
+    background-color: rgb(165, 236, 208);
+    text-align: center;
+    width: 100px;
+    padding: 8px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-weight: bold;
+}
+.monimager
+{
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+.la-palette-du-gout
+{
+    background-image: url(../images/restaurants/la-palette-du-gout.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0
+}
+.la-note-enchantee
+{
+    background-image: url(../images/restaurants/la-note-enchantee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0
+}
+.a-la-française
+{
+    background-image: url(../images/restaurants/a-la-française.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0
+}
+.le-delice-des-sens
+{
+    background-image: url(../images/restaurants/le-delice-des-sens.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+
+
+/* ///////////////// FOOTER \\\\\\\\\\\\\\\\\\\\\\\ */
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(49, 46, 46);
+    padding-left: 35px;
+    padding-bottom: 25px;
+}
+footer  a
+{
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.logo-footer img
+{
+    height: 18px;
+    width: 100px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.svg-information
+{
+    margin-bottom: 10px;
+}
+.svg-information img
+{
+    margin-right: 10px;
+}
