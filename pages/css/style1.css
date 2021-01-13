@@ -99,7 +99,6 @@ header
 {
     display: flex;
     flex-direction: column;
-    background-color: white;
     position: relative;
     width: 100%;
     background-color:rgba(128, 128, 128, 0.103);
@@ -112,6 +111,37 @@ header
     padding-right: 15px;
     padding-left: 15px;
     justify-content: space-between;
+}
+.entree
+{
+    overflow: hidden;
+}
+.entree :nth-child(2)
+{
+    animation: apparitionmenu 800ms both;
+}
+.entree :nth-child(3)
+{
+    animation: apparitionmenu 800ms 0.3s both;
+}
+.entree :nth-child(4)
+{
+    animation: apparitionmenu 800ms 0.6s both;
+}
+
+@keyframes apparitionmenu
+{
+    0% 
+	{
+		opacity: 0;
+		transform:translateY(30px);
+	}
+	100% 
+	{
+		opacity: 1;
+		transform:translateY(0);
+		transition: 1s cubic-bezier(0.5,0,0,1);
+	}
 }
 .title-svg h1
 {
@@ -168,6 +198,32 @@ header
     text-align: end;
     font-weight: bold;
     width: 10%;
+}
+.animehover img
+{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 9999px;
+    text-align: center;
+}
+.animehover
+{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    border-color: blue;
+    border-radius: 0 15px 15px 0 ;
+    background-color: rgb(122, 218, 122);
+    cursor: pointer;
+    transition: all 800ms ease-in-out;
+    overflow: hidden;
+}
+.animehover:hover
+{
+    transform: translateX(100px) rotate(90deg);
 }
 .plats h2
 {
@@ -236,4 +292,32 @@ footer  a
 .svg-information img
 {
     margin-right: 10px;
+}
+
+/* ///////////////// mediaqueries \\\\\\\\\\\\\\\\\\\\\\\ */
+
+@media all and (min-width: 1750px)
+{
+    #menu
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        height: 600px;
+    }
+    .commander a
+    {
+        margin-left: 30px;
+    }
+    .commander
+    {
+        position: absolute;
+        left: 80px;
+        bottom: 200px;
+    }
+    footer
+   {
+       text-align: center;
+   }
 }

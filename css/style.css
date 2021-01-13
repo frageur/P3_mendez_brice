@@ -115,6 +115,13 @@ h1
 {
     color:  rgb(183, 111, 238);
 }
+.container-fonctionnement i
+{
+    color: rgb(107, 104, 104);
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: all 200ms ease-in-out;
+}
 .container-fonctionnement:hover
 {
     background-color:  rgb(231, 223, 236);
@@ -148,13 +155,6 @@ h1
 .container-fonctionnement p
 {
     font-weight: bold;
-}
-.container-fonctionnement i
-{
-    color: rgb(107, 104, 104);
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: all 200ms ease-in-out;
 }
 
 /* ///////////////// SECTION RESTAURANTS \\\\\\\\\\\\\\\\\\\\\\\ */
@@ -220,14 +220,6 @@ h1
 }
 
 .restaurant-information .fa-heart:hover
-{
-    background: linear-gradient(0deg, rgba(217,32,218,0.8) 0%, rgba(180,32,181,0.8) 50%, rgba(123,34,195,0.8) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0;
-    -webkit-text-stroke-color: transparent;
-}
-.restaurant-information .fa-heart.liked
 {
     background: linear-gradient(0deg, rgba(217,32,218,0.8) 0%, rgba(180,32,181,0.8) 50%, rgba(123,34,195,0.8) 100%);
     -webkit-background-clip: text;
@@ -320,4 +312,38 @@ footer  a
 .svg-information img
 {
     margin-right: 10px;
+}
+
+
+/* ///////////////// mediaqueries \\\\\\\\\\\\\\\\\\\\\\\ */
+
+@media all and (min-width: 1750px)
+{
+   #fonctionnement h2
+   {
+        text-align: center;
+   }
+    .containers-fonctionnement
+   {
+       display: flex;
+       flex: 1 1 auto;
+       justify-content: center;
+   }
+   #restaurant h2
+   {
+       text-align: center;
+   }
+   .boxes-restaurants
+   {
+       display: flex;
+       justify-content: space-around;
+   }
+   .boxes-restaurants :nth-child(3)
+   {
+       width: 194px;
+   }
+   footer
+   {
+       text-align: center;
+   }
 }
