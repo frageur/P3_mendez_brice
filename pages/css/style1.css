@@ -378,7 +378,7 @@ footer  a
 {
     .a-la-française
     {
-        height: 550px;
+        height: 800px;
     }
     #menu
     {
@@ -386,7 +386,6 @@ footer  a
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        height: 600px;
     }
     .title-svg
     {
@@ -409,6 +408,5 @@ footer  a
     footer
    {
        text-align: center;
-       height: 250px;
    }
 }
