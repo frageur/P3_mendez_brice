@@ -199,7 +199,8 @@ header
 }
 .animehover :hover
 {
-    transform: translateX(-100px) rotate(190deg);
+    transform: rotate(360deg);
+    transition: all 1800ms;
     width: 20px;
 }
 .plats h2
