@@ -83,6 +83,33 @@ header
     position: relative;
     z-index: 1;
 }
+.la-note-enchantée
+{
+    background-image: url(../../images/restaurants/la-note-enchantee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.la-palette-du-goût
+{
+    background-image: url(../../images/restaurants/la-palette-du-gout.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.le-délice-des-sens
+{
+    background-image: url(../../images/restaurants/le-delice-des-sens.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
 .cache-bloc
 {
     position: absolute;
